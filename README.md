@@ -22,3 +22,10 @@ Static brand/product site for Hearthpath Kits (M3 Marketplace LLC). No backend, 
 
 ## Notes
 Product information reflects the currently approved HPK-001 offer at $19 and four PDF files. All purchase buttons link to the established Etsy listing. No checkout occurs here. Check Terms and Privacy text for business-specific requirements before launch.
+
+
+## v1.1 changes
+- Replaced six-page header/footer branding references with `/assets/emblem.png`.
+- The homepage features an enlarged real worksheet preview linked to a full-resolution image.
+- Product preview gallery now displays six actual worksheet pages in two columns, each linking to a full-size image in a new tab.
+- No Cloudflare configuration changes needed.
