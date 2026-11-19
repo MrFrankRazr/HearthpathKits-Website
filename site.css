@@ -12,3 +12,15 @@
 .worksheet-preview img{display:block;width:100%;height:auto;border-radius:0;box-shadow:none}
 .worksheet-preview>span{display:block;padding:11px 16px;font-weight:700;font-size:.95rem}
 @media(max-width:760px){.worksheet-gallery{grid-template-columns:1fr;max-width:520px}.worksheet-feature{max-width:430px}}
+
+/* HPK v1.2: second product and accessible previews */
+.caregiver-feature{background:#fffefa}
+.caregiver-feature .feature-grid{grid-template-columns:1.04fr .96fr}
+.caregiver-feature-image{display:block;border-radius:16px;overflow:hidden;box-shadow:0 20px 40px #15394a19}
+.caregiver-feature-image img{width:100%;height:auto;display:block}
+.caregiver-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.caregiver-gallery a{display:block;text-decoration:none;background:#fffefa;border:1px solid var(--line);border-radius:15px;overflow:hidden;box-shadow:0 10px 22px #15394a0d}
+.caregiver-gallery img{width:100%;height:auto;display:block;border-radius:0;box-shadow:none}
+.caregiver-gallery span{display:block;padding:12px 18px;font-weight:700;font-size:.9rem}
+.product-card + .product-card{margin-top:24px}
+@media(max-width:760px){.caregiver-feature .feature-grid,.caregiver-gallery{grid-template-columns:1fr}.caregiver-feature-image{max-width:520px;margin:auto}}
