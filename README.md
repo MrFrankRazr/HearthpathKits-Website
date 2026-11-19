@@ -1,31 +1,27 @@
-# Hearthpath Kits Website v1.0
+# Hearthpath Kits — Website v1.2
 
-Static brand/product site for Hearthpath Kits (M3 Marketplace LLC). No backend, third-party analytics, customer login, or checkout. Purchases link to Etsy.
+Static website for Hearthpath Kits, operated by M3 Marketplace LLC.
 
-## Deployment via Cloudflare Pages + GitHub
-1. Create a NEW GitHub repository (suggested: `hearthpathkits-website`).
-2. Upload the **contents of this folder** to the root of `main`, preserving the `assets` folder and page directories. Do not upload just the outer ZIP as a repository file.
-3. In Cloudflare dashboard: **Workers & Pages → Create application → Pages → Connect to Git**. Select the new repository.
-4. Framework preset: **None**. Build command: **leave blank** (or `exit 0` when needed). Build output directory: **`.`** (repository root). Production branch: `main`.
-5. Deploy. Check the generated `*.pages.dev` preview, navigation, images, mobile menu, Etsy links and privacy text.
-6. Under the Pages project, select **Custom domains → Set up a custom domain**, adding `hearthpathkits.com`, then optionally `www.hearthpathkits.com`. Follow Cloudflare's guided DNS steps; do NOT replace MX, SPF, DKIM or DMARC records.
-7. Set preferred canonical domain and configure `www` redirect if desired. Verify SSL.
-8. After live verification, add domain to Google Search Console and submit `/sitemap.xml`. Optional analytics require Privacy Policy updates.
+## New in v1.2
+- HPK-002 Aging Parent Information Organizer added to homepage, collection, and new `/caregiver/` page.
+- Approved HPK-002 listing images reused as website assets.
+- Existing HPK-001 product page, branding, and checkout links retained.
+- Sitemap expanded to include `/caregiver/`.
+- v1.1 banner PNG fix retained.
 
-## Files
-- `index.html` homepage
-- `kits/`, `product/`, `about/`, `contact/`, `privacy/` content pages
-- `assets/` optimized product and logo images
-- `site.css` responsive styles
-- `site.js` accessible mobile menu
-- `robots.txt`, `sitemap.xml`, `_headers` metadata and security
+## Deployment
+Upload the **contents** of this directory to the GitHub repository root, preserving directory names. Cloudflare Pages settings: branch `main`, blank build command, output `.`.
 
-## Notes
-Product information reflects the currently approved HPK-001 offer at $19 and four PDF files. All purchase buttons link to the established Etsy listing. No checkout occurs here. Check Terms and Privacy text for business-specific requirements before launch.
+Etsy product links:
+- HPK-001: https://www.etsy.com/listing/4603201135/family-emergency-planner-printable
+- HPK-002: https://www.etsy.com/listing/4609345102/aging-parent-information-organizer
 
+## Post-deploy verification
+- Homepage features both products; check images and buttons.
+- `/kits/` shows two available items.
+- `/product/` and `/caregiver/` show correct product information and links.
+- Click new gallery previews to open enlarged images.
+- Confirm `/sitemap.xml` includes seven URLs and submit in Search Console.
+- Test on desktop and mobile before changing anything else.
 
-## v1.1 changes
-- Replaced six-page header/footer branding references with `/assets/emblem.png`.
-- The homepage features an enlarged real worksheet preview linked to a full-resolution image.
-- Product preview gallery now displays six actual worksheet pages in two columns, each linking to a full-size image in a new tab.
-- No Cloudflare configuration changes needed.
+No payment processing or customer data collection happens on the website; checkout stays with Etsy.
