@@ -1,0 +1,94 @@
+.guide-hero {
+  padding: clamp(3rem, 8vw, 6.5rem) 0;
+}
+
+.guide-hero .hero-grid {
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.guide-hero h1 {
+  font-size: clamp(2.25rem, 4.75vw, 4.35rem);
+}
+
+.guide-figure {
+  max-width: 29rem;
+  margin: 0 auto;
+  padding: 0.85rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2.75rem #15394a16;
+}
+
+.guide-figure img {
+  display: block;
+  border-radius: 0.55rem;
+}
+
+.guide-figure figcaption {
+  padding: 0.7rem 0.25rem 0.1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.guide-comparison {
+  scroll-margin-top: 5.5rem;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.35rem;
+  margin-top: 2rem;
+}
+
+.guide-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.guide-card .eyebrow {
+  margin-bottom: 0.3rem;
+}
+
+.guide-card .guide-maker {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.guide-card .guide-format {
+  margin-top: auto;
+  color: var(--sage);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.guide-featured {
+  background: #f2f5ec;
+  border-color: #c9d4bf;
+}
+
+.guide-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+.guide-faq .faq {
+  max-width: 46rem;
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-figure {
+    max-width: 23rem;
+  }
+}
